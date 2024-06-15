@@ -5,7 +5,7 @@ export type PredicateValue<T, V> = [Predicate<T> | T, V];
 
 export function createEvaluator<T, V>(
   cases: PredicateValue<T, V>[],
-  defaultCase: any
+  defaultCase?: any
 ): (item: T) => V {
   return (item: T): V => {
     for (const [predicate, value] of cases) {
