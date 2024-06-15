@@ -43,6 +43,13 @@ console.log(evaluator(0)); // 'default value'
 ## How does it work?
 The createEvaluator function generates an evaluator function that takes a series of predicate-value pairs and an optional default case. When invoked with an input, the evaluator iterates through the predicates, applying each to the input. If a predicate is a function, it checks if the input satisfies the condition. If it's a value, it compares it directly to the input. The evaluator returns the corresponding value of the first true predicate. If no predicates match, it returns the value from the default case. This approach allows for flexible, reusable evaluation logic.
 
+### Parameters used on createEvaluator method
+
+| Name | Type | Description |
+| --------- | --------- | --------- |
+| cases | PredicateValue<T, V>[] | Array of predicate-value to be evaluate on the returned method. |
+| defaultValue | any | Optional value returned when all cases are false. |
+
 
 ## License
 
