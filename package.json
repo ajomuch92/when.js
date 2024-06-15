@@ -1,5 +1,5 @@
 {
-  "name": "when.js",
+  "name": "@ajomuch92/when.js",
   "version": "1.0.0",
   "description": "A package to use as a switch with vitamins ",
   "main": "lib/index.js",
