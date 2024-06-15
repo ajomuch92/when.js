@@ -42,5 +42,8 @@
   },
   "jest": {
    "preset": "ts-jest"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
