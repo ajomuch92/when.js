@@ -1,0 +1,44 @@
+{
+  "name": "when.js",
+  "version": "1.0.0",
+  "description": "A package to use as a switch with vitamins ",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib"
+  ],
+  "directories": {
+    "test": "tests",
+    "lib": "src"
+  },
+  "repository": {
+    "url": "https://github.com/ajomuch92/when.js"
+  },
+  "scripts": {
+    "build": "npx tsc",
+    "test": "jest"
+  },
+  "keywords": [
+    "when",
+    "when.js",
+    "switch",
+    "case",
+    "typescript"
+  ],
+  "author": "Aaron Montes",
+  "license": "MIT",
+  "devDependencies": {
+    "@jest/globals": "^29.7.0",
+    "@types/jest": "^29.5.12",
+    "@types/lodash.isequal": "^4.5.8",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.4",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "lodash.isequal": "^4.5.0"
+  },
+  "jest": {
+   "preset": "ts-jest"
+  }
+}
