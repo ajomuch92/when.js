@@ -1,5 +1,5 @@
 
-# When.js
+# @ajomuch92/when.js
 
 A simple and light package to use as a switch but with some vitamins. Inspired on the [match](https://www.php.net/manual/en/control-structures.match.php) function from PHP.
 
