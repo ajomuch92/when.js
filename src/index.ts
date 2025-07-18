@@ -1,4 +1,4 @@
-import isEqual from 'lodash.isequal';
+import equal from 'fast-deep-equal'
 
 export type Predicate<T> = (item: T) => boolean;
 export type PredicateValue<T, V> = [Predicate<T> | T, V];
@@ -13,7 +13,7 @@ export function createEvaluator<T, V>(
         if ((predicate as Predicate<T>)(item)) {
           return value;
         }
-      } else if (isEqual(predicate, item)) {
+      } else if (equal(predicate, item)) {
         return value;
       }
     }
