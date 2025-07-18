@@ -6,20 +6,20 @@ A simple and light package to use as a switch but with some vitamins. Inspired o
 
 ## Installation
 
-Install when.js:
+Install @ajomuch92/when.js:
 
 ```bash
-  npm install when.js
+  npm install @ajomuch92/when.js
 
-  pnpm install when.js
+  pnpm install @ajomuch92/when.js
 
-  yarn add when.js
+  yarn add @ajomuch92/when.js
 ```
     
 ## Usage
 
 ```ts
-import { createEvaluator, PredicateValue } from 'when.js'
+import { createEvaluator, PredicateValue } from '@ajomuch92/when.js'
 
 const cases: PredicateValue<number | string | object, string>[] = [
   [(x: number | string) => typeof x === 'number' && x > 10, 'greater than 10'],
